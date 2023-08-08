@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1px;
+    border: 1px solid black;
+    width: 320px; /* Adjust as needed */
+    margin: 0 auto; /* Center the grid */
+}
+
+.grid-item {
+    width: 100%;
+    padding-top: 100%; /* Maintain square aspect ratio */
+    background-color: white;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.grid-item.hovered {
+    background-color: black; /* Change color on hover */
+}
