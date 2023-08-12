@@ -7,13 +7,32 @@
     margin: 0 auto; /* Center the grid */
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .grid-item {
     width: 100%;
     padding-top: 100%; /* Maintain square aspect ratio */
     background-color: white;
-    transition: background-color 0.3s; /* Smooth transition effect */
+    transition: background-color 0.2s; /* Smooth transition effect */
 }
 
 .grid-item.hovered {
     background-color: black; /* Change color on hover */
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
 }
